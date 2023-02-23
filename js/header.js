@@ -1,14 +1,17 @@
-var pagename = ['', '无人生还','基督山伯爵'];
+var title = '享阅'
+var pagename = ['', '无人生还', '基督山伯爵']
 
-function bookName(i) {
-    var strUrl = location.href;
-    var arrUrl = strUrl.split("/");
-    var strBook = arrUrl[i];
-    return strBook;
+function bookName() {
+    var strUrl = location.href
+    var arrUrl = strUrl.split('/')
+    var strBook = arrUrl[arrUrl.length - 2]
+    return strBook
 }
 
-var booknum = bookName(3).match(/\d+/g);
-if (booknum.length > 0) {
-    $('.pagename').html(pagename[parseInt(booknum[0]) - 1]);
-    $(".pagename").attr("href",'/book' + booknum[0] + '/intro.html');
+var booknum = bookName().match(/\d+/g)
+if (!Array.isArray(booknum)) {
+    $('.pagename').html(title)
+} else if (booknum.length > 0) {
+    $('.pagename').html(pagename[parseInt(booknum[0]) - 1])
+    $('.pagename').attr('href', '/book' + booknum[0] + '/intro.html')
 }
