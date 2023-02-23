@@ -2,7 +2,14 @@ var show = true;
 var scrollTop = 0;
 var notes = 0;
 
-var book = location.href.split("/")[3]
+function bookName() {
+    var strUrl = location.href
+    var arrUrl = strUrl.split('/')
+    var strBook = arrUrl[arrUrl.length - 2]
+    return strBook
+}
+
+var book = bookName()
 
 //每个item所显示的资讯
 var item = {
