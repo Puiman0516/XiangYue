@@ -1,4 +1,3 @@
-var title = '享阅'
 var pagename = ['', '无人生还', '基督山伯爵']
 
 function bookName() {
@@ -9,9 +8,7 @@ function bookName() {
 }
 
 var booknum = bookName().match(/\d+/g)
-if (!Array.isArray(booknum)) {
-    $('.pagename').html(title)
-} else if (booknum.length > 0) {
+if (booknum > 0) {
     $('.pagename').html(pagename[parseInt(booknum[0]) - 1])
-    $('.pagename').attr('href', '/book' + booknum[0] + '/intro.html')
+    $('.pagename').attr('href', '../book' + booknum[0] + '/intro.html')
 }
