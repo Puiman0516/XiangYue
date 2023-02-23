@@ -1,0 +1,104 @@
+* {
+	padding: 0;
+	margin: 0;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* *::-webkit-scrollbar {
+	display: none;
+} */
+
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	font-size: 14px;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+body,
+html {
+	font-family: Microsoft YaHei;
+	height: 100%;
+	background-color: rgb(237, 235, 236);
+}
+
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none;
+}
+
+a {
+	color: black;
+}
+
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
+	text-decoration: none;
+}
+
+
+
+
+
+header {
+	transition: 0.2s;
+	display: flex;
+	position: fixed;
+	height: 50px;
+	width: 100%;
+	background-color: white;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+
+	justify-content: space-between;
+	align-items: center;
+
+	z-index: 10;
+}
+
+header img {
+	height: 100%;
+}
+
+header .menu2 {
+	display: flex;
+}
+
+header .menu2 ul {
+	list-style: none;
+	margin-right: 10px;
+}
+
+header .pagename {
+	font-size: 24px;
+}
+
+header .logo {
+	height: 100%;
+}
+
+
+
+
+.line {
+	background-color: dimgray;
+	height: 0.3px;
+	margin-bottom: 10px;
+}

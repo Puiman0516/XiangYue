@@ -1,0 +1,214 @@
+.book-info {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    padding-top: 60px;
+}
+
+.book-info .book-info-content {
+    display: flex;
+    width: 85%;
+    border-radius: 10px;
+    background-color: white;
+
+    padding: 20px;
+}
+
+.book-info .book-info-cover {
+    display: flex;
+    height: 400px;
+    margin-right: 20px;
+}
+
+.book-info .book-info-cover img {
+    border-radius: 10px;
+}
+
+.book-info .book-info-r {
+    display: flex;
+    flex-direction: column;
+
+    width: 75%;
+
+    justify-content: space-between;
+    
+}
+
+.book-info .book-info-title {
+    display: flex;
+    align-items: flex-end;
+}
+
+.book-info .book-info-title .title{
+    font-size: 38px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.book-info .book-info-title .author{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: rgb(80, 80, 80);
+}
+
+.book-info .book-info-data{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.book-info .book-info-data .data{
+    color: dimgray;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.book-info .book-info-data .score{
+    color: dimgray;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.book-info .book-info-data .score span{
+    color: #ffa726;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.book-info .book-info-intro {
+    font-size: 16px;
+    color: rgb(80, 80, 80);
+}
+
+.btn-read, .btn-save {
+    transition: 0.1s;
+    cursor: pointer;
+    float: left;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-right: 10px;
+
+    color: white;
+    font-size: 20px;
+    background-color: rgb(77, 148, 98);
+}
+
+.btn-save {
+    color: black;
+    background-color: white;
+    border: solid grey 1px;
+}
+
+.btn-read:hover {
+    background-color: rgb(97, 168, 119);
+}
+.btn-save:hover {
+    border: solid rgb(73, 73, 73) 1px;
+}
+
+
+
+.book-tab {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 20px;
+}
+
+.book-tab-r {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+}
+
+.book-chapter {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.book-chapter .book-chapter-title, .book-author .book-author-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+.book-chapter .book-chapter-btns {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn-ch {
+    display: block;
+    cursor: pointer;
+    background: rgb(252, 252, 252);
+    height: 50px;
+    width: 47%;
+    line-height: 50px;
+    
+    border-radius: 10px;
+    margin: 0 10px 20px 0;
+    padding-left: 30px;
+}
+
+.btn-ch:hover {
+    color: rgb(77, 148, 98);
+}
+
+.book-author {
+    width: 30%;
+
+}
+
+.book-author .book-author-intro {
+    font-size: 16px;
+    background-color: rgb(252, 252, 252);
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.book-author .book-author-intro .author-name {
+    background-color: rgb(197, 197, 197);
+    text-align: center;
+    padding: 5px 0;
+    margin-bottom: 5px;
+}
+
+.book-author .book-author-intro .author-name p{
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.book-author .book-author-intro img{
+    width: 60%;
+    align-self: center;
+    margin-bottom: 5px;
+}
+
+.book-author .book-author-intro .author-name p{
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.book-author .book-author-intro table th{
+    width: 70px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.book-author .book-author-intro table{
+    border-spacing: 10px;
+}
